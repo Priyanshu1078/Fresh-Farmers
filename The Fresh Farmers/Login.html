@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Fresh Farmers</title>
+<link rel="stylesheet" href="Login.css">
+<script src="login.js"></script>
+</head>
+<body>
+
+<p align="center" style="font-size: 35px; color: white">- - - The Fresh Farmers - - -</p>
+
+<form acttion=" " method="post">
+  <div class="imgcontainer">
+    <img src="images/logo.png" height="300px" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname" style="color: white;"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" id="username" required>
+
+    <label for="psw" style="color: white"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+        
+    <button type="submit"> <a onclick="validate()" style="color: white;font-size: 18px;">Login</a></button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> <span style="color: white"> Remember me </span>
+    </label>
+  </div>
+
+  <div class="container" style="background-color:white;">
+    <button type="button" class="cancelbtn" style="color: white;">Cancel</button>
+    <span class="psw"><a href="#" style="color: rgb(19, 150, 226);">Forgot password?</a></span>
+  </div>
+</form>
+
+</body>
+</html>

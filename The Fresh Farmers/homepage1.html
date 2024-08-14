@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Fresh Farmers</title>
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" >
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="reviews.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="store.js" async></script>
+    <script>var continuallySettings = { appID: "69vrp7mp4ypx" };</script><script src="https://cdn-app.continual.ly/js/embed/continually-embed.latest.min.js"></script>    <title>The Fresh Farmers  </title>
+    <style>
+a, u {
+  text-decoration: none;
+}      
+.box {
+  float: left;
+  text-align: justify;
+  padding: 10px;
+  width: 250px;
+  height: 420px;
+  box-shadow: 0px 0px 5px 5px rgba(179, 179, 179, 0.7);
+  margin-top: 15px;
+  margin-left: 35px;
+  margin-bottom: 15px;
+  font-family: arial;
+  border-radius: 7px;
+}
+.boxex {
+  float: left;
+  text-align: justify;
+  padding: 10px;
+  width: 250px;
+  height: 420px;
+  box-shadow: 0px 0px 5px 5px rgba(255, 217, 0, 0.7);
+  margin-top: 15px;
+  margin-left: 35px;
+  margin-bottom: 15px;
+  font-family: arial;
+  border-radius: 7px;
+}
+fieldset{
+    border-color: black;
+}
+.field {
+    box-shadow: 0 5px 10px rgba(179, 179, 179, 0.7);
+    border-radius: 7px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.field1 {
+    box-shadow: 0 0 2px 4px rgba(179, 179, 179, 0.7);
+    border-radius: 7px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+body {
+  margin: 0;
+  font-family: monospace;
+}
+.topnav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: arial;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+}
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: white;
+    font-family: "Metal Mania";
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+    font-family: "Metal Mania";
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: white;
+    font-family: "Metal Mania";
+}
+.cart-quantity {
+    width: 35%;
+    font-family: "Metal Mania";
+}
+
+.cart-item-title {
+    color: white;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(179, 179, 179, 0.7);
+}
+.cart-total{
+    color: white;
+    font-family: "Metal Mania";
+    font-size: 1.5em;
+}
+.open-button {
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  position:relative;
+
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  right: 15px;
+  
+  z-index: 9;
+
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: #04AA6D;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+</head>
+
+<body bgcolor="black">
+
+
+
+<!-- HEADER SECTION STARTS -->
+<div class="topnav">
+<header class="header">
+  <fieldset class="field" style="background-color: black;">
+    <table>
+      <tr>
+      <th rowspan="10" colspan="10"><img src="images/logo.png" height="150px" width="150px" style="margin-right:20px ;"> </th>
+        <th>
+        <table style="margin-right: auto; margin-left: auto;">
+        <tr style="font-size: 35px">
+        <th> <a href="#home"> HOME&nbsp;</a> </th>
+        <th> <a href="aboutus.html" class="hyper">&nbsp;ABOUT&nbsp;</a> </th>
+        <th> <a href="#products">&nbsp;VEGETABLES&nbsp;</a> </th>
+        <th> <a href="#exclusive">&nbsp;FRUITS</a> </th>
+        <th> <a href="#review">&nbsp;REVIEWS</a> </th>
+        <th><a href="#contact">&nbsp;CONTACT US</a> </th>
+        <th><a href="our farmers.html">&nbsp;OUR FARMERS</a> </th>
+        <th><a href="#cart">&nbsp;CART<i class="fa fa-shopping-cart"></i></a></th>
+        <th><a class="open-button" onclick="openForm()">&nbsp;Profile<i class="fa fa-user"></i></a></th>
+        </tr>
+        </table>
+      </th>
+      </tr>
+    </table>
+  </fieldset></div>
+<!-- HEADER SECTION ENDS -->
+<div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+        <img src="images/priyanshu.jpeg" alt="Jane" height="35%" width="35%" style = "border-radius:155px;margin-left: 30%;">
+      <h3 style="text-align:center;font-size: 25px;">Priyanshu</h3>
+      <h3 style="color: grey;font-size: 20px;text-align: center;">Customer</h3>
+      <h3 style="text-align:center;font-size: 25px;">Your Order</h3>
+
+
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
+        <!-- HOME SECTION STARTS --><section class="home" id="home"></section>
+        <div style="margin-top:180px ;margin-left: 85%;" id="google_translate_element"></div>
+
+        <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+        
+        <script type="text/javascript" src="images///translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <img src="images/logo gif.gif" style=" margin-left:400px;border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);" height= 350px width=700px>
+        <h2 style="color: white;font-family: Candara;font-style: italic; text-align: center; text-shadow: 10px 10px 20px rgba(179, 179, 179, 0.7);">"The day you plant the seed is not the day you eat the fruit."</h2>
+
+<!-- EXCLUSIVE CONTENT -->
+<section class="exclusive" id="exclusive">
+    <h1 class="heading" style="color: white; font-family: Arial; font-size: 40px;text-align: center;"><span>Fruits</span>
+    </h1>
+    <fieldset>
+
+    <div class="shop-items">
+      <div class="boxex">
+        <img class="shop-item-image" src="images/fruits/apple.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                      
+        <h3 class="shop-item-title" style="color: white;font-size: 20px;">Apple</h3>
+        <h3 style="color: white;font-size: 15px;"></h3>
+       <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+       &#8377;150<h3 style="color: white;font-size: 15px;"></h3>
+       <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">130</span></h1>
+       <h3 style="color: orange;font-size: 15px;">13% OFF</h3>
+        <button class="btn btn-primary shop-item-button">Add To Cart</button>
+        </div></div>
+        <div class="shop-items">
+        <div class="boxex">
+            <img class="shop-item-image" src="images/fruits/Date.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                      
+            <h3 class="shop-item-title" style="color: white;font-size: 20px;">Date</h3>
+            <h3 style="color: white;font-size: 15px;"></h3>
+           <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+           &#8377;300<h3 style="color: white;font-size: 15px;"></h3>
+           <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">250</span></h1>
+           <h3 style="color: orange;font-size: 15px;">16% OFF</h3>
+            <button class="btn btn-primary shop-item-button">Add To Cart</button>
+        </div></div>
+        <div class="shop-items">
+        <div class="boxex">
+        <div class="image">
+            <img class="shop-item-image" src="images/fruits/Kiwi.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                      
+        <h3 class="shop-item-title" style="color: white;font-size: 20px;">Kiwi</h3>
+        <h3 style="color: white;font-size: 15px;"></h3>
+       <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+       &#8377;200<h3 style="color: white;font-size: 15px;"></h3>
+       <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">160</span></h1>
+       <h3 style="color: orange;font-size: 15px;">20% OFF</h3>
+        <button class="btn btn-primary shop-item-button">Add To Cart</button>
+        </div></div>
+        <div class="shop-items">
+        <div class="boxex">
+        <div class="image">
+            <img class="shop-item-image" src="images/fruits/Pear.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                      
+            <h3 class="shop-item-title" style="color: white;font-size: 20px;">Pear</h3>
+            <h3 style="color: white;font-size: 15px;"></h3>
+           <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+           &#8377;200<h3 style="color: white;font-size: 15px;"></h3>
+           <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">160</span></h1>
+           <h3 style="color: orange;font-size: 15px;">20% OFF</h3>
+            <button class="btn btn-primary shop-item-button">Add To Cart</button>
+        </div></div>
+        <div class="shop-items">
+            <div class="boxex">
+            <div class="image">
+                <img class="shop-item-image" src="images/fruits/Plum.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                          
+                <h3 class="shop-item-title" style="color: white;font-size: 20px;">Plum</h3>
+                <h3 style="color: white;font-size: 15px;"></h3>
+               <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+               &#8377;100<h3 style="color: white;font-size: 15px;"></h3>
+               <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">70</span></h1>
+               <h3 style="color: orange;font-size: 15px;">30% OFF</h3>
+                <button class="btn btn-primary shop-item-button">Add To Cart</button>
+            </div></div>
+            <div class="shop-items">
+                <div class="boxex">
+                <div class="image">
+                    <img class="shop-item-image" src="images/fruits/Berry.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+                    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Berry</h3>
+                    <h3 style="color: white;font-size: 15px;"></h3>
+                   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+                   &#8377;1800<h3 style="color: white;font-size: 15px;"></h3>
+                   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">1600</span></h1>
+                   <h3 style="color: orange;font-size: 15px;">11% OFF</h3>
+                    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+                </div></div>
+<div class="shop-items">
+<div class="boxex">
+<div class="image">
+<img class="shop-item-image" src="images/fruits/Guava.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+<h3 class="shop-item-title" style="color: white;font-size: 20px;">Guava</h3>
+<h3 style="color: white;font-size: 15px;"></h3>
+<h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+&#8377;65<h3 style="color: white;font-size: 15px;"></h3>
+<h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">49</span></h1>
+<h3 style="color: orange;font-size: 15px;">23% OFF</h3>
+<button class="btn btn-primary shop-item-button">Add To Cart</button>
+</div></div> 
+<div class="shop-items">
+<div class="boxex">
+<div class="image">
+<img class="shop-item-image" src="images/fruits/Mango.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+<h3 class="shop-item-title" style="color: white;font-size: 20px;">Mango</h3>
+<h3 style="color: white;font-size: 15px;"></h3>
+<h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+&#8377;150<h3 style="color: white;font-size: 15px;"></h3>
+<h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">110</span></h1>
+<h3 style="color: orange;font-size: 15px;">26% OFF</h3>
+<button class="btn btn-primary shop-item-button">Add To Cart</button>
+</div></div>
+<div class="shop-items">
+<div class="boxex">
+<div class="image">
+<img class="shop-item-image" src="images/fruits/Peach.png" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+<h3 class="shop-item-title" style="color: white;font-size: 20px;">Peach</h3>
+<h3 style="color: white;font-size: 15px;"></h3>
+<h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+&#8377;300<h3 style="color: white;font-size: 15px;"></h3>
+<h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">245</span></h1>
+<h3 style="color: orange;font-size: 15px;">19% OFF</h3>
+<button class="btn btn-primary shop-item-button">Add To Cart</button>
+</div></div>
+<div class="shop-items">
+    <div class="boxex">
+    <div class="image">
+    <img class="shop-item-image" src="images/fruits/banana.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Banana</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+    <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+    &#8377;52<h3 style="color: white;font-size: 15px;"></h3>
+    <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">40</span></h1>
+    <h3 style="color: orange;font-size: 15px;">23% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+    </div></div>
+    <div class="shop-items">
+        <div class="boxex">
+        <div class="image">
+        <img class="shop-item-image" src="images/fruits/Cherry.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+        <h3 class="shop-item-title" style="color: white;font-size: 20px;">Cherry</h3>
+        <h3 style="color: white;font-size: 15px;"></h3>
+        <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+        &#8377;190<h3 style="color: white;font-size: 15px;"></h3>
+        <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">165</span></h1>
+        <h3 style="color: orange;font-size: 15px;">13% OFF</h3>
+        <button class="btn btn-primary shop-item-button">Add To Cart</button>
+        </div></div>
+        <div class="shop-items">
+            <div class="boxex">
+            <div class="image">
+            <img class="shop-item-image" src="images/fruits/Grapes.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+            <h3 class="shop-item-title" style="color: white;font-size: 20px;">Grapes</h3>
+            <h3 style="color: white;font-size: 15px;"></h3>
+            <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+            &#8377;200<h3 style="color: white;font-size: 15px;"></h3>
+            <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">155</span></h1>
+            <h3 style="color: orange;font-size: 15px;">22.5% OFF</h3>
+            <button class="btn btn-primary shop-item-button">Add To Cart</button>
+            </div></div>
+            <div class="shop-items">
+                <div class="boxex">
+                <div class="image">
+                <img class="shop-item-image" src="images/fruits/Lychee.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                <h3 class="shop-item-title" style="color: white;font-size: 20px;">Lychee</h3>
+                <h3 style="color: white;font-size: 15px;"></h3>
+                <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+                &#8377;80<h3 style="color: white;font-size: 15px;"></h3>
+                <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">60</span></h1>
+                <h3 style="color: orange;font-size: 15px;">25% OFF</h3>
+                <button class="btn btn-primary shop-item-button">Add To Cart</button>
+                </div></div>
+<div class="shop-items">
+<div class="boxex">
+<div class="image">
+<img class="shop-item-image" src="images/fruits/Orange.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+<h3 class="shop-item-title" style="color: white;font-size: 20px;">Orange</h3>
+<h3 style="color: white;font-size: 15px;"></h3>
+<h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+&#8377;150<h3 style="color: white;font-size: 15px;"></h3>
+<h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">110</span></h1>
+<h3 style="color: orange;font-size: 15px;">27% OFF</h3>
+<button class="btn btn-primary shop-item-button">Add To Cart</button>
+</div></div>
+<div class="shop-items">
+<div class="boxex">
+<div class="image">
+<img class="shop-item-image" src="images/fruits/Papaya.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+<h3 class="shop-item-title" style="color: white;font-size: 20px;">Papaya</h3>
+<h3 style="color: white;font-size: 15px;"></h3>
+<h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+&#8377;50<h3 style="color: white;font-size: 15px;"></h3>
+<h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">34</span></h1>
+<h3 style="color: orange;font-size: 15px;">32% OFF</h3>
+<button class="btn btn-primary shop-item-button">Add To Cart</button>
+</div></div>
+<div class="shop-items">
+<div class="boxex">
+<div class="image">
+<img class="shop-item-image" src="images/fruits/Pitaya.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+<h3 class="shop-item-title" style="color: white;font-size: 20px;">Pitaya</h3>
+<h3 style="color: white;font-size: 15px;"></h3>
+<h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+&#8377;150<h3 style="color: white;font-size: 15px;"></h3>
+<h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">100</span></h1>
+<h3 style="color: orange;font-size: 15px;">33% OFF</h3>
+<button class="btn btn-primary shop-item-button">Add To Cart</button>
+</div></div>
+<div class="shop-items">
+    <div class="boxex">
+    <div class="image">
+    <img class="shop-item-image" src="images/fruits/Apricot.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Apricot</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+    <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+    &#8377;240<h3 style="color: white;font-size: 15px;"></h3>
+    <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">190</span></h1>
+    <h3 style="color: orange;font-size: 15px;">21% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+    </div></div>
+    <div class="shop-items">
+        <div class="boxex">
+        <div class="image">
+        <img class="shop-item-image" src="images/fruits/Avocado.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+        <h3 class="shop-item-title" style="color: white;font-size: 20px;">Avocado</h3>
+        <h3 style="color: white;font-size: 15px;"></h3>
+        <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+        &#8377;190<h3 style="color: white;font-size: 15px;"></h3>
+        <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">150</span></h1>
+        <h3 style="color: orange;font-size: 15px;">23% OFF</h3>
+        <button class="btn btn-primary shop-item-button">Add To Cart</button>
+        </div></div>
+        <div class="shop-items">
+            <div class="boxex">
+            <div class="image">
+            <img class="shop-item-image" src="images/fruits/Coconut.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+            <h3 class="shop-item-title" style="color: white;font-size: 20px;">Coconut</h3>
+            <h3 style="color: white;font-size: 15px;"></h3>
+            <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+            &#8377;50<h3 style="color: white;font-size: 15px;"></h3>
+            <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">40</span></h1>
+            <h3 style="color: orange;font-size: 15px;">20% OFF</h3>
+            <button class="btn btn-primary shop-item-button">Add To Cart</button>
+            </div></div>
+            <div class="shop-items">
+                <div class="boxex">
+                <div class="image">
+                <img class="shop-item-image" src="images/fruits/Raisins.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                <h3 class="shop-item-title" style="color: white;font-size: 20px;">Raisins</h3>
+                <h3 style="color: white;font-size: 15px;"></h3>
+                <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+                &#8377;500<h3 style="color: white;font-size: 15px;"></h3>
+                <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">420</span></h1>
+                <h3 style="color: orange;font-size: 15px;">16% OFF</h3>
+                <button class="btn btn-primary shop-item-button">Add To Cart</button>
+                </div></div>
+<div class="shop-items">
+<div class="boxex">
+<div class="image">
+<img class="shop-item-image" src="images/fruits/Mulberry.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+<h3 class="shop-item-title" style="color: white;font-size: 20px;">Mulberry</h3>
+<h3 style="color: white;font-size: 15px;"></h3>
+<h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+&#8377;200<h3 style="color: white;font-size: 15px;"></h3>
+<h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">170</span></h1>
+<h3 style="color: orange;font-size: 15px;">15% OFF</h3>
+<button class="btn btn-primary shop-item-button">Add To Cart</button>
+</div></div>
+<div class="shop-items">
+<div class="boxex">
+<div class="image">
+<img class="shop-item-image" src="images/fruits/Shaddock.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+<h3 class="shop-item-title" style="color: white;font-size: 20px;">Shaddock</h3>
+<h3 style="color: white;font-size: 15px;"></h3>
+<h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+&#8377;240<h3 style="color: white;font-size: 15px;"></h3>
+<h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">200</span></h1>
+<h3 style="color: orange;font-size: 15px;">16% OFF</h3>
+<button class="btn btn-primary shop-item-button">Add To Cart</button>
+</div></div>
+<div class="shop-items">
+<div class="boxex">
+<div class="image">
+<img class="shop-item-image" src="images/fruits/Blueberry.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+<h3 class="shop-item-title" style="color: white;font-size: 20px;">Blueberry</h3>
+<h3 style="color: white;font-size: 15px;"></h3>
+<h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+&#8377;600<h3 style="color: white;font-size: 15px;"></h3>
+<h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">500</span></h1>
+<h3 style="color: orange;font-size: 15px;">16% OFF</h3>
+<button class="btn btn-primary shop-item-button">Add To Cart</button>
+</div></div>
+<div class="shop-items">
+    <div class="boxex">
+    <div class="image">
+    <img class="shop-item-image" src="images/fruits/Cranberry.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Cranberry</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+    <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+    &#8377;540<h3 style="color: white;font-size: 15px;"></h3>
+    <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">480</span></h1>
+    <h3 style="color: orange;font-size: 15px;">11% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+    </div></div>
+    <div class="shop-items">
+        <div class="boxex">
+        <div class="image">
+        <img class="shop-item-image" src="images/fruits/Java plum.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+        <h3 class="shop-item-title" style="color: white;font-size: 20px;">Java Plum</h3>
+        <h3 style="color: white;font-size: 15px;"></h3>
+        <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+        &#8377;210<h3 style="color: white;font-size: 15px;"></h3>
+        <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">150</span></h1>
+        <h3 style="color: orange;font-size: 15px;">28.5% OFF</h3>
+        <button class="btn btn-primary shop-item-button">Add To Cart</button>
+        </div></div>
+    </div></fieldset></section><br><br>
+
+        <!-- EXCLUSIVE SECTION ENDS -->
+        <section class="products" id="products">
+
+            <h1 class="heading" style="color: white; font-family: arial; font-size: 40px;text-align: center;"><span>VEGETABLES</span>
+            </h1><fieldset>
+            <div class="box">
+                    <div class="shop-items">
+               
+                    <img class="shop-item-image" src="images/tomatoes-1326096.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+
+                
+                    <h3 class="shop-item-title" style="color: white; font-size: 20px;">Tomatoes</h3>
+                    <h3 style="color: white;font-size: 15px;"></h3>
+                    <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+                        &#8377;100<h3 style="color: white;font-size: 15px;"></h3>
+                        <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">75</span></h1>
+                        <h3 style="color: orange;font-size: 15px;">25% OFF</h3>
+                        <button class="btn btn-primary shop-item-button">Add To Cart</button>
+                </div></div>
+                <div class="box">
+                <div class="shop-items">
+              
+                    <img class="shop-item-image" src="images/Potato.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+               
+                    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Potato</h3>
+                    <h3 style="color: white;font-size: 15px;"></h3>
+                    <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+                        &#8377;50<h3 style="color: white;font-size: 15px;"></h3>
+                        <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">40</span></h1>
+                        <h3 style="color: orange;font-size: 15px;">20% OFF</h3>
+                        <button class="btn btn-primary shop-item-button">Add To Cart</button>
+                </div></div>
+                <div class="box">
+                <div class="shop-items">
+                <div class="image">
+                    <img class="shop-item-image" src="images/Onions.jpeg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                </div>
+                    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Onions</h3>
+                    <h3 style="color: white;font-size: 15px;"></h3>
+                    <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+                        &#8377;70<h3 style="color: white;font-size: 15px;"></h3>
+                        <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">50</span></h1>
+                        <h3 style="color: orange;font-size: 15px;">28% OFF</h3>
+                        <button class="btn btn-primary shop-item-button">Add To Cart</button>
+                    </h3>
+                </div></div>
+                <div class="box">
+                    <div class="shop-items">
+                <div class="image">
+                    <img class="shop-item-image" src="images/radish.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                </div>
+                    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Radish</h3>
+                    <h3 style="color: white;font-size: 15px;"></h3>
+                    <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+                        &#8377;50<h3 style="color: white;font-size: 15px;"></h3>
+                        <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">30</span></h1>
+                        <h3 style="color: orange;font-size: 15px;">40% OFF</h3>
+                        <button class="btn btn-primary shop-item-button">Add To Cart</button>
+                    </h3>
+                </div></div>
+                <div class="box">
+            <div class="shop-items">
+                <div class="image">
+                    <img class="shop-item-image" src="images/carrots.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                </div>
+                    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Carrots</h3>
+                    <h3 style="color: white;font-size: 15px;"></h3>
+                    <h3 style="color: grey;font-size:15px;text-decoration: line-through;">
+                        &#8377;50<h3 style="color: white;font-size: 15px;"></h3>
+                        <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">30</span></h1>
+                        <h3 style="color: orange;font-size: 15px;">40% OFF</h3>
+                        <button class="btn btn-primary shop-item-button">Add To Cart</button>
+                    </h3>
+                </div></div>
+                <div class="box">
+                <div class="shop-items">
+                <div class="image">
+                    <img class="shop-item-image" src="images/Brinjal.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                </div>
+                    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Brinjal</h3>
+                    <h3 style="color: white;font-size: 15px;"></h3>
+                    <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+                        &#8377;60<h3 style="color: white;font-size: 15px;"></h3>
+                        <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">45</span></h1>
+                        <h3 style="color: orange;font-size: 15px;">25% OFF</h3>
+                        <button class="btn btn-primary shop-item-button">Add To Cart</button>
+                </div></div>
+                <div class="box">
+                    <div class="shop-items">
+                  
+                        <img class="shop-item-image" src="images/corn.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                   
+                        <h3 class="shop-item-title" style="color: white;font-size: 20px;">Corn</h3>
+                        <h3 style="color: white;font-size: 15px;"></h3>
+                        <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+                            &#8377;50<h3 style="color: white;font-size: 15px;"></h3>
+                            <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">30</span></h1>
+                            <h3 style="color: orange;font-size: 15px;">40% OFF</h3>
+                            <button class="btn btn-primary shop-item-button">Add To Cart</button>
+                    </div></div>
+                    <div class="box">
+                        <div class="shop-items">
+                      
+                            <img class="shop-item-image" src="images/Mint.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                       
+                            <h3 class="shop-item-title" style="color: white;font-size: 20px;">Mint</h3>
+                            <h3 style="color: white;font-size: 15px;"></h3>
+                            <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+                                &#8377;30<h3 style="color: white;font-size: 15px;"></h3>
+                                <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">20</span></h1>
+                                <h3 style="color: orange;font-size: 15px;">33% OFF</h3>
+                                <button class="btn btn-primary shop-item-button">Add To Cart</button>
+                        </div></div>
+                        <div class="box">
+                            <div class="shop-items">
+                          
+                                <img class="shop-item-image" src="images/Peas.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                           
+                                <h3 class="shop-item-title" style="color: white;font-size: 20px;">Peas</h3>
+                                <h3 style="color: white;font-size: 15px;"></h3>
+                                <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+                                    &#8377;100<h3 style="color: white;font-size: 15px;"></h3>
+                                    <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">80</span></h1>
+                                    <h3 style="color: orange;font-size: 15px;">20% OFF</h3>
+                                    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+                            </div></div>
+                            <div class="box">
+                                <div class="shop-items">
+                              
+                                    <img class="shop-item-image" src="images/Lemon.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                               
+                                    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Lemon</h3>
+                                    <h3 style="color: white;font-size: 15px;"></h3>
+                                    <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+                                        &#8377;200<h3 style="color: white;font-size: 15px;"></h3>
+                                        <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">150</span></h1>
+                                        <h3 style="color: orange;font-size: 15px;">25% OFF</h3>
+                                        <button class="btn btn-primary shop-item-button">Add To Cart</button>
+                                </div></div>
+                                <div class="box">
+                                    <div class="shop-items">
+                                  
+                                        <img class="shop-item-image" src="images/celery.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                                   
+                                        <h3 class="shop-item-title" style="color: white;font-size: 20px;">Celery</h3>
+                                        <h3 style="color: white;font-size: 15px;"></h3>
+                                        <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+                                            &#8377;50<h3 style="color: white;font-size: 15px;"></h3>
+                                            <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">40</span></h1>
+                                            <h3 style="color: orange;font-size: 15px;">20% OFF</h3>
+                                            <button class="btn btn-primary shop-item-button">Add To Cart</button>
+                                    </div></div>
+                                    <div class="box">
+                                        <div class="shop-items">
+                                      
+                                            <img class="shop-item-image" src="images/Garlic.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                                       
+                                            <h3 class="shop-item-title" style="color: white;font-size: 20px;">Garlic</h3>
+                                            <h3 style="color: white;font-size: 15px;"></h3>
+                                            <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+                                                &#8377;100<h3 style="color: white;font-size: 15px;"></h3>
+                                                <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">85</span></h1>
+                                                <h3 style="color: orange;font-size: 15px;">15% OFF</h3>
+                                                <button class="btn btn-primary shop-item-button">Add To Cart</button>
+                                        </div></div>
+                                    <div class="box">
+                                         <div class="shop-items">
+                                          
+                                            <img class="shop-item-image" src="images/Turnip.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                                           
+                                            <h3 class="shop-item-title" style="color: white;font-size: 20px;">Turnip</h3>
+                                            <h3 style="color: white;font-size: 15px;"></h3>
+                                            <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+                                                &#8377;80<h3 style="color: white;font-size: 15px;"></h3>
+                                                <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">60</span></h1>
+                                                <h3 style="color: orange;font-size: 15px;">25% OFF</h3>
+                                                <button class="btn btn-primary shop-item-button">Add To Cart</button>
+                                        </div></div>
+            <div class="box">
+                <div class="shop-items">
+              
+                    <img class="shop-item-image" src="images/ginger.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+               
+                    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Ginger</h3>
+                    <h3 style="color: white;font-size: 15px;"></h3>
+                    <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+                        &#8377;60<h3 style="color: white;font-size: 15px;"></h3>
+                        <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">40</span></h1>
+                        <h3 style="color: orange;font-size: 15px;">33% OFF</h3>
+                        <button class="btn btn-primary shop-item-button">Add To Cart</button>
+                </div></div>
+                <div class="box">
+                    <div class="shop-items">
+                  
+                        <img class="shop-item-image" src="images/Broccoli.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                   
+                        <h3 class="shop-item-title" style="color: white;font-size: 20px;">Broccoli</h3>
+                        <h3 style="color: white;font-size: 15px;"></h3>
+                        <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+                            &#8377;100<h3 style="color: white;font-size: 15px;"></h3>
+                            <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">80</span></h1>
+                            <h3 style="color: orange;font-size: 15px;">20% OFF</h3>
+                            <button class="btn btn-primary shop-item-button">Add To Cart</button>
+                    </div></div>
+                    <div class="box">
+                        <div class="shop-items">
+                      
+                            <img class="shop-item-image" src="images/Mushroom.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                       
+                            <h3 class="shop-item-title" style="color: white;font-size: 20px;">Mushroom</h3>
+                            <h3 style="color: white;font-size: 15px;"></h3>
+                            <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+                                &#8377;70<h3 style="color: white;font-size: 15px;"></h3>
+                                <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">50</span></h1>
+                                <h3 style="color: orange;font-size: 15px;">28% OFF</h3>
+                                <button class="btn btn-primary shop-item-button">Add To Cart</button>
+                        </div></div>
+<div class="box">
+ <div class="shop-items">
+                          
+ <img class="shop-item-image" src="images/Turmeric.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                           
+ <h3 class="shop-item-title" style="color: white;font-size: 20px;">Turmeric</h3>
+ <h3 style="color: white;font-size: 15px;"></h3>
+<h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+&#8377;100<h3 style="color: white;font-size: 15px;"></h3>
+<h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">80</span></h1>
+<h3 style="color: orange;font-size: 15px;">20% OFF</h3>
+ <button class="btn btn-primary shop-item-button">Add To Cart</button>
+</div></div>
+<div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/cucumbers.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Cucumbers</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;50<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">40</span></h1>
+   <h3 style="color: orange;font-size: 15px;">20% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+   <div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/Jackfruit.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Jackfruit</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;50<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">30</span></h1>
+   <h3 style="color: orange;font-size: 15px;">40% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+   <div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/Fava Beans.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Fava Beans</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;140<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">73</span></h1>
+   <h3 style="color: orange;font-size: 15px;">48% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+   <div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/red Chilli.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Red Chilli</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;115<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">71</span></h1>
+   <h3 style="color: orange;font-size: 15px;">38% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+   <div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/cauliflower.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Cauliflower</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;50<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">40</span></h1>
+   <h3 style="color: orange;font-size: 15px;">20% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+   <div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/curry-leaf1.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Curry Leaf</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;80<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">70</span></h1>
+   <h3 style="color: orange;font-size: 15px;">12.5% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+   <div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/Green beans.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Green Beans</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;171<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">132</span></h1>
+   <h3 style="color: orange;font-size: 15px;">23% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+   <div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/Green-Onion.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Green Onion</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;60<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">55</span></h1>
+   <h3 style="color: orange;font-size: 15px;">8% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+   <div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/Lady_Finger.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Lady Finger</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;150<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">120</span></h1>
+   <h3 style="color: orange;font-size: 15px;">20% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+   <div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/Bitter-Gourd.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Bitter Gourd</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;50<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">47</span></h1>
+   <h3 style="color: orange;font-size: 15px;">6% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+   <div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/black-pepper.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Black Pepper</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;850<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">800</span></h1>
+   <h3 style="color: orange;font-size: 15px;">6% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+   <div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/Bottle-Gourd.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Bottle Gourd</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;70<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">55</span></h1>
+   <h3 style="color: orange;font-size: 15px;">21% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+   <div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/Green-chilli.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Green Chilli</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;50<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">45</span></h1>
+   <h3 style="color: orange;font-size: 15px;">10% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+   <div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/Ridged gourd.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Ridged Gourd</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;120<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">93</span></h1>
+   <h3 style="color: orange;font-size: 15px;">22.5% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+   <div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/sweet-potato.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Sweet Potato</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;60<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">53</span></h1>
+   <h3 style="color: orange;font-size: 15px;">11.5% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+   <div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/CLUSTER-BEANS.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Cluster Beans</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;60<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">49</span></h1>
+   <h3 style="color: orange;font-size: 15px;">18% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+   <div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/Corinder-leaf.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Corinder Leaf</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;50<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">35</span></h1>
+   <h3 style="color: orange;font-size: 15px;">30% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+   <div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/green-cabbage.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Green Cabbage</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;30<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">20</span></h1>
+   <h3 style="color: orange;font-size: 15px;">33% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+   <div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/Pointed Gourd.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Pointed Gourd</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;50<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">35</span></h1>
+   <h3 style="color: orange;font-size: 15px;">30% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+   <div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/Garbanzo-Beans.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Garbanzo Beans</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;100<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">71</span></h1>
+   <h3 style="color: orange;font-size: 15px;">29% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+   <div class="box">
+    <div class="shop-items">
+                             
+    <img class="shop-item-image" src="images/Mustard-greens.jpg" height="200px" width="200px" style="border-radius: 7px;box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);margin-left: 15px;">
+                              
+    <h3 class="shop-item-title" style="color: white;font-size: 20px;">Mustard Green</h3>
+    <h3 style="color: white;font-size: 15px;"></h3>
+   <h3 style="color: grey;font-size: 15px;text-decoration: line-through;">
+   &#8377;100<h3 style="color: white;font-size: 15px;"></h3>
+   <h1 style="color: white;font-size: 15px;">&#8377;<span class="shop-item-price" style="color: white;font-size: 20px;">80</span></h1>
+   <h3 style="color: orange;font-size: 15px;">20% OFF</h3>
+    <button class="btn btn-primary shop-item-button">Add To Cart</button>
+   </div></div>
+            </fieldset></section>
+       
+        <!--Cart-->
+        <section class="content-section" id="cart">
+            <fieldset class="field1">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE &#8377;</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">&#8377;0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+            </fieldset> </section><br><br>
+
+        <!-- REVIEW SECTION STARTS -->
+
+        <section id="review" class="review">
+        <fieldset>
+        <h2 style="font-size: 40px; font-family: arial; color: white;">&nbsp;Reviews</h2>
+        <div class="container">
+        <img src="images/images/p1.jpg" alt="Avatar" style="width:90px">
+        <p><span style="font-size: 25px; font-family: arial;">RAHUL KAKKAR</span></p>
+        <p style="font-size: 25px; font-family: arial;">Vegetables and fruits from your site are pretty good as compared to other sites ,they were fresh.</p>
+        </div>
+
+        <div class="container">
+        <img src="images/images/p2.jpg" alt="Avatar" style="width:90px">
+        <p><span style="font-size: 25px; font-family: arial;">MEHAK MEHRA</span></p>
+        <p style="font-size: 25px; font-family: arial;">It was ok, half of the friuts were rotten and it didn't live up to my exceptation.</p>
+        </div>
+
+        <div class="container">
+        <img src="images/images/person3.jpg" alt="Avatar" style="width:90px">
+        <p><span style="font-size: 25px; font-family: arial;">ANVI</span></p>
+        <p style="font-size: 25px; font-family: arial;">Fruits and vegetables both were in good condition and the delivery was on time as expected.</p>
+        </div>
+        </fieldset>
+        </section>
+        <!-- REVIEW SECTION STARTS -->
+          
+
+
+
+
+
+
+<!-- CONTACT SECTION STARTS -->
+
+<fieldset>
+<section id="contact">
+<h1 class="heading"> <span style="font-size: 40px; font-family: arial; color: white;"> &nbsp;Contact Us </span></h1>
+<iframe src="images/https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1718.5869955471214!2d76.65869418515173!3d30.51611883132797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fc32344a6e2d7%3A0x81b346dee91799ca!2sChitkara%20University!5e0!3m2!1sen!2sin!4v1640022228465!5m2!1sen!2sin" width="700" height="300" style="border:5px solid grey;" allowfullscreen="" loading="lazy">
+</iframe>
+<p style="font-size: 25px; font-family: arial; color: white;"> Find us at Chitkara University Rajpura Punjab </p>
+<p style="font-size: 25px; font-family: arial; color: white;"> +91 72XXXXXXXX ; +91 87XXXXXXXX </p>
+</fieldset><br><br>

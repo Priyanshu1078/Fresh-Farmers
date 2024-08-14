@@ -1,0 +1,52 @@
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: white;
+    font-family: "Metal Mania";
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+    font-family: "Metal Mania";
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: white;
+    font-family: "Metal Mania";
+}
+.cart-quantity {
+    width: 35%;
+    font-family: "Metal Mania";
+}
+
+.cart-item-title {
+    color: white;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(179, 179, 179, 0.7);
+}
+.cart-total{
+    color: white;
+    font-family: "Metal Mania";
+    font-size: 1.5em;
+}
